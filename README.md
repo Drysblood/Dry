@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @Drysblood
 - 👀 I’m interested in IT and Gaming
-- 🌱 I’m currently learning CSS, HTML, Java, etc...
+- 🌱 I’m currently learning C++ & Game C++
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me write pn on me
 
