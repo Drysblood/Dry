@@ -5,7 +5,7 @@ using namespace std;
 class Infos{
 
 private:
-    char infoChoice = _getch();
+    char infoChoice;
     bool infoRun = false;
     string name = ("Dominik S.");
     string wohnort = ("M\x94nchengladbach");

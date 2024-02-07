@@ -10,7 +10,7 @@ void Infos::showInfos(){
     cout << "\t\t\t\t\t    | -> INFORMATIONEN  <- |\n";
     cout << "\t\t\t\t\t    +----------------------+\n\n";
     cout << "\n\n\n";
-    while(!_kbhit()){
+    do{
     cout << "\t\t\t\t\t     Hallo liebe Leser/in";
     cout << "\n\n\n";
     cout << "\t\t\tMein Name ist " << name << " und ich habe Anfang Dezember 2023 angefangen" << endl;
@@ -22,7 +22,6 @@ void Infos::showInfos(){
     cout << "\t\t\tMeine Interessen lagen schon immer im Computer-Bereich, fr""\x81""her                " << endl;
     cout << "\t\t\thaupts""\x84""chlich im Gaming Bereich, seit Anfang Dezember" << endl;
     cout << "\t\t\taber haupts""\x84""chlich in VSCODE!" << endl; 
-
-    _getch();
-    }
+    cin.get();   
+    }while(!infoChoice);
 }

@@ -10,7 +10,7 @@ private:
     char mChoice;
 
 public:
-    int showMenu();
+    void showMenu();
 };
 
 #endif // MENU_HPP
