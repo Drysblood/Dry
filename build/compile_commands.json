@@ -1,0 +1,8 @@
+[
+{
+  "directory": "C:/dev/vscode/Dry/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -g -o CMakeFiles\\Dry.dir\\main.cpp.obj -c C:\\dev\\vscode\\Dry\\main.cpp",
+  "file": "C:\\dev\\vscode\\Dry\\main.cpp",
+  "output": "CMakeFiles\\Dry.dir\\main.cpp.obj"
+}
+]

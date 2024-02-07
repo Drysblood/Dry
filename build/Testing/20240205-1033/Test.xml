@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Win32-MSBuild"
+	BuildStamp="20240205-1033-Experimental"
+	Name="Dry"
+	Generator="ctest-3.27.9"
+	CompilerName="C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/cl.exe"
+	CompilerVersion="19.38.33135.0"
+	OSName="Windows"
+	Hostname="Dry"
+	OSRelease=" Personal"
+	OSVersion=" (Build 19045)"
+	OSPlatform="AMD64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="14"
+	ProcessorCacheSize="-1"
+	NumberOfLogicalCPU="8"
+	NumberOfPhysicalCPU="4"
+	TotalVirtualMemory="75196"
+	TotalPhysicalMemory="65468"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="4200"
+	>
+	<Testing>
+		<StartDateTime>Feb 05 18:40 Mitteleurop[NON-UTF-8-BYTE-0xE4]ische Zeit</StartDateTime>
+		<StartTestTime>1707154839</StartTestTime>
+		<TestList/>
+		<EndDateTime>Feb 05 18:40 Mitteleurop[NON-UTF-8-BYTE-0xE4]ische Zeit</EndDateTime>
+		<EndTestTime>1707154839</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

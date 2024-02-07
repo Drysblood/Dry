@@ -1,0 +1,10 @@
+^C:\DEV\VSCODE\DRY\BUILD\CMAKEFILES\056B7F3454649C51F75F4086CB9EC3A1\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/dev/vscode/Dry -BC:/dev/vscode/Dry/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/dev/vscode/Dry/build/Dry.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

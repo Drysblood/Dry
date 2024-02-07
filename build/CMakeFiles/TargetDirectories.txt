@@ -1,0 +1,9 @@
+C:/dev/vscode/Dry/build/CMakeFiles/Experimental.dir
+C:/dev/vscode/Dry/build/CMakeFiles/Nightly.dir
+C:/dev/vscode/Dry/build/CMakeFiles/Continuous.dir
+C:/dev/vscode/Dry/build/CMakeFiles/NightlyMemoryCheck.dir
+C:/dev/vscode/Dry/build/CMakeFiles/Dry.dir
+C:/dev/vscode/Dry/build/CMakeFiles/PACKAGE.dir
+C:/dev/vscode/Dry/build/CMakeFiles/RUN_TESTS.dir
+C:/dev/vscode/Dry/build/CMakeFiles/ALL_BUILD.dir
+C:/dev/vscode/Dry/build/CMakeFiles/ZERO_CHECK.dir
