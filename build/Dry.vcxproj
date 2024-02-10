@@ -312,6 +312,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="C:\dev\vscode\Dry\src\snake.cpp" />
     <ClInclude Include="C:\dev\vscode\Dry\src\information.hpp" />
     <ClCompile Include="C:\dev\vscode\Dry\src\information.cpp" />
+    <ClInclude Include="C:\dev\vscode\Dry\src\Kp.hpp" />
+    <ClCompile Include="C:\dev\vscode\Dry\src\kp.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\dev\vscode\Dry\build\ZERO_CHECK.vcxproj">

@@ -1,6 +1,7 @@
 #include "spiele.hpp"
 #include "snake.hpp"
 
+
 Spiele::Spiele(){
 
 }
@@ -22,8 +23,12 @@ void Spiele::showGames(){
                 snake.draw();
                 snake.input();
                 snake.logic();
-                Sleep(5);
+                Sleep(50);
             }
+            showGames();
+            break;
+            case '2':
+
             break;
             default:
             std::cout << "Falsche Eingabe!\n";

@@ -15,6 +15,7 @@ src/kontakt.hpp src/kontakt.cpp
 src/spiele.hpp src/spiele.cpp
 src/snake.hpp src/snake.cpp
 src/information.hpp src/information.cpp
+src/Kp.hpp src/kp.cpp
 )
 
 set_target_properties(Dry PROPERTIES LINK_FLAGS "/SUBSYSTEM:CONSOLE")

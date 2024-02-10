@@ -9,7 +9,7 @@ class Snake{
 private:
 
 
-    const int width = 60;
+    const int width = 25;
     const int height = 25;
     int x, y, fruitX, fruitY;
     int score;
