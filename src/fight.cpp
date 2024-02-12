@@ -1,28 +1,33 @@
 #include "fight.hpp"
-
+#include "menu.hpp"
 Fighting::Fighting(){
 
     Enemy enemy;
-    enemy.attack = rand() % 35;
+    enemy.attack = rand() % 35 + 35;
     Player player;
-    player.weapon = rand() % 15;
-    player.attack = rand() % 51;
+    player.weapon = rand() % 15 + 15;
+    player.attack = rand() % 51 + 20;
     Speed speed;
-    speed.fSpeed = rand() % 35;
-    speed.kSpeed = rand() % 75;
-    speed.sSpeed = rand() % 25;
-    speed.attack = rand() % 25;
+    speed.fSpeed = rand() % 35 + 20;
+    speed.kSpeed = rand() % 75 + 11;
+    speed.sSpeed = rand() % 25 + 35;
+    speed.attack = rand() % 25 + 15;
 
 }
 
 
 
 void Fighting::playMenu(){
+    menu m;
+    system("cls");
         cout << "\n\n\n\n";
         cout << "\n[ 1 ] Play Game";
-        cout << "\n[ 2 ] Rules";
-        cout << "\n[ 3 ] Back from menu";
+        cout << "\n[ 2 ] Back from menu";
         cout << "\n";
+
+        if(_getch() == '2'){
+            m.showMenu();
+        }
 }
 
 void Fighting::play(){
@@ -30,6 +35,7 @@ void Fighting::play(){
     Weapons weap;
     Enemy enemy;
     Speed speed;
+    system("cls");
     srand(time(nullptr));
         cout << "\n\nGib dein Benutzername an: ";
         getline(cin, player.uName);
@@ -261,7 +267,8 @@ void Fighting::play(){
 
 
         cout << "Drücke eine beliebige Taste um das Spiel zu beenden!\n";
-        system("pause");
+        _getch();
+        playMenu();
 
 }
 
