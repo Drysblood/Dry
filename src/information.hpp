@@ -2,7 +2,8 @@
 #include <conio.h>
 using namespace std;
 
-class Infos{
+class Infos
+{
 
 private:
     char infoChoice;
@@ -11,9 +12,8 @@ private:
     string wohnort = ("M\x94nchengladbach");
     string gBoren = ("Datteln");
     int age = 31;
-    
+
 public:
     Infos();
     void showInfos();
-
 };

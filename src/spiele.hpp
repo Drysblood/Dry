@@ -6,9 +6,10 @@
 
 using namespace std;
 
-class Spiele{
+class Spiele
+{
 private:
-    vector<int>Spiel;
+    vector<int> Spiel;
 
 public:
     Spiele();

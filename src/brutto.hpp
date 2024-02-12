@@ -1,10 +1,10 @@
 #include <iostream>
 #include <conio.h>
 
-
 using namespace std;
 
-class brutto{
+class brutto
+{
 private:
     double brutto;
     double netto;

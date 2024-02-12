@@ -8,23 +8,25 @@
 
 using namespace std;
 
-struct Contact{
+struct Contact
+{
     string title;
     string name;
     string phone;
     string email;
 };
 
-class Contactmenu{
+class Contactmenu
+{
 private:
     std::vector<Contact> contacts;
-public:
 
+public:
     Contactmenu();
     void loadContactsFromFile();
     void saveContactsToFile();
-    void addContact(const Contact& contact);
-    int editContact(int index, const Contact& newContact);
+    void addContact(const Contact &contact);
+    int editContact(int index, const Contact &newContact);
     void deleteContact(int index);
     void displayContacts();
     void showDisplay();

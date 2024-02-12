@@ -5,7 +5,8 @@
 #include <conio.h>
 #include "windows.h"
 
-class menu{
+class menu
+{
 private:
     char mChoice;
 

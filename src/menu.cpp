@@ -9,62 +9,63 @@
 //
 #include <list>
 
-
-void menu::showMenu(){
+void menu::showMenu()
+{
 
     Taschenrechner tr;
     brutto Brutto;
-	Contactmenu cm;
+    Contactmenu cm;
     Spiele spiele;
-	Snake snake;
-	Infos infos;
-	BMI bmi;
-	cout << "\n\t\t\t\t\t+--------------------------------+\n";
-	cout << "\t\t\t\t\t|          Dry's Console         |\n";
-	cout << "\t\t\t\t\t|        Programm v. 0.3.2       |\n";
-	cout << "\t\t\t\t\t+--------------------------------+\n";
-	cout << "\n\n\n\n";
-	cout << "\t\t\t\t\t\t +------------+\n";
-	cout << "\t\t\t\t\t\t | -> MENU <- |\n";
-	cout << "\t\t\t\t\t\t +------------+\n";
-	cout << "\n\n\n";
-	while(!_kbhit()){
-	cout << "\t\t[ 1 ] Taschenrechner\n";
-    cout << "\t\t[ 2 ] Bruttorechner\n";
-    cout << "\t\t[ 3 ] Addressbuch\n";
-    cout << "\t\t[ 4 ] Spiele\n";
-    cout << "\t\t[ 5 ] Informationen\n";
-    cout << "\t\t[ 6 ] BMI-Rechner\n";
+    Snake snake;
+    Infos infos;
+    BMI bmi;
+    cout << "\n\t\t\t\t\t+--------------------------------+\n";
+    cout << "\t\t\t\t\t|          Dry's Console         |\n";
+    cout << "\t\t\t\t\t|        Programm v. 0.3.2       |\n";
+    cout << "\t\t\t\t\t+--------------------------------+\n";
+    cout << "\n\n\n\n";
+    cout << "\t\t\t\t\t\t +------------+\n";
+    cout << "\t\t\t\t\t\t | -> MENU <- |\n";
+    cout << "\t\t\t\t\t\t +------------+\n";
+    cout << "\n\n\n";
+    while (!_kbhit())
+    {
+        cout << "\t\t[ 1 ] Taschenrechner\n";
+        cout << "\t\t[ 2 ] Bruttorechner\n";
+        cout << "\t\t[ 3 ] Addressbuch\n";
+        cout << "\t\t[ 4 ] Spiele\n";
+        cout << "\t\t[ 5 ] Informationen\n";
+        cout << "\t\t[ 6 ] BMI-Rechner\n";
 
-    cout << "\t\t[ 7 ] EXITING\n\n";
-			char mChoice = _getch();
-           cout << "Sie haben die " << mChoice << " gewaehlt!\n";
-			Sleep(1700);
-			switch (mChoice) {
-				case '1':
-					tr.showCalc();
-					break;
-				case '2':
-					Brutto.showBrutto();
-				case '3':
-					cm.loadContactsFromFile();
-					cm.showDisplay();
-				case '4':
-					spiele.showGames();
-				case '5':
-					infos.showInfos();
-					showMenu();
-				break;
-				case '6':
-					bmi.bmiRechner();
-					showMenu();
-                case '7':
-				exit(0);
-				break;
-				default:
-					cout << "Falsche Eingabe!\n";
-
-				}
-	}
-	system("CLS");
+        cout << "\t\t[ 7 ] EXITING\n\n";
+        char mChoice = _getch();
+        cout << "Sie haben die " << mChoice << " gewaehlt!\n";
+        Sleep(1700);
+        switch (mChoice)
+        {
+        case '1':
+            tr.showCalc();
+            break;
+        case '2':
+            Brutto.showBrutto();
+        case '3':
+            cm.loadContactsFromFile();
+            cm.showDisplay();
+        case '4':
+            spiele.showGames();
+        case '5':
+            infos.showInfos();
+            showMenu();
+            break;
+        case '6':
+            bmi.bmiRechner();
+            showMenu();
+        case '7':
+            exit(0);
+            break;
+        default:
+            cout << "Falsche Eingabe!\n";
+        }
+    }
+    system("CLS");
 }

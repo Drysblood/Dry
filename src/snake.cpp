@@ -1,11 +1,13 @@
 #include "snake.hpp"
 #include <windows.h>
 
-Snake::Snake(){
+Snake::Snake()
+{
     system("cls");
 }
 
-void Snake::setup(){
+void Snake::setup()
+{
     gameOver = false;
     dir = STOP;
     x = width / 2;
@@ -16,7 +18,9 @@ void Snake::setup(){
     score = 0;
 }
 
-void Snake::draw(){
+void Snake::draw()
+{
+    system("cls");
     static HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
     static COORD cursorPosition;
 
@@ -26,43 +30,47 @@ void Snake::draw(){
     SetConsoleCursorPosition(hConsole, cursorPosition);
 
     for (int i = 0; i < width + 2; i++) // Außenlinie in der Breite oben
-        cout << "~"; // Obere Linie
-        cout << endl;
-        for(int i = 0; i < height; i++) // Außenlinie links & rechts
+        cout << "~";                    // Obere Linie
+    cout << endl;
+    for (int i = 0; i < height; i++) // Außenlinie links & rechts
+    {
+        for (int j = 0; j < width; j++)
         {
-            for(int j = 0; j < width; j++)
+            if (j == 0)
+                cout << "|"; // Linker Rand
+            if (i == y && j == x)
+                cout << "@"; // snake Kopf
+            else if (i == fruitY && j == fruitX)
+                cout << "F"; // Fruit
+            else
             {
-                if(j == 0)
-                    cout << "|"; // Linker Rand
-                    if(i == y && j == x)
-                    cout << "@"; // snake Kopf
-                    else if(i == fruitY && j == fruitX)
-                    cout << "F"; // Fruit
-                    else{
-                        bool print = false;
-                        for (int k = 0; k < nTail; k++){
-                            if(tailX[k] == j && tailY[k] == i) 
-                            {
-                                cout << "o"; // Nach dem essen
-                                print = true;
-                            }
-                        }
-                        if (!print)
-                            cout << " ";
+                bool print = false;
+                for (int k = 0; k < nTail; k++)
+                {
+                    if (tailX[k] == j && tailY[k] == i)
+                    {
+                        cout << "o"; // Nach dem essen
+                        print = true;
                     }
-                    if (j == width - 1)
-                    cout << "|"; // Rechter Rand
+                }
+                if (!print)
+                    cout << " ";
             }
-            cout << endl;
+            if (j == width - 1)
+                cout << "|"; // Rechter Rand
         }
-        for(int i = 0; i < width +2; i++)
-        cout << "~"; // untere Linie
         cout << endl;
-        cout << "Score: " << score << endl;
+    }
+    for (int i = 0; i < width + 2; i++)
+        cout << "~"; // untere Linie
+    cout << endl;
+    cout << "Score: " << score << endl;
 }
 
-void Snake::input(){
-    if(_kbhit()){
+void Snake::input()
+{
+    if (_kbhit())
+    {
         switch (_getch())
         {
         case 'a':
@@ -84,7 +92,8 @@ void Snake::input(){
     }
 }
 
-void Snake::logic(){
+void Snake::logic()
+{
     int prevX = tailX[0];
     int prevY = tailY[0];
     int prev2X, prev2Y;
@@ -116,8 +125,14 @@ void Snake::logic(){
     default:
         break;
     }
-if (x >= width) x = 0; else if (x < 0) x = width - 1;
-    if (y >= height) y = 0; else if (y < 0) y = height - 1;
+    if (x >= width)
+        x = 0;
+    else if (x < 0)
+        x = width - 1;
+    if (y >= height)
+        y = 0;
+    else if (y < 0)
+        y = height - 1;
 
     for (int i = 0; i < nTail; i++)
         if (tailX[i] == x && tailY[i] == y)

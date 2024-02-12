@@ -1,8 +1,8 @@
 #include <iostream>
 
-
 using namespace std;
-class BMI{
+class BMI
+{
 private:
     float size, weight, bmi;
 

@@ -198,36 +198,41 @@ int Taschenrechner::divide(double num1, double num2)
     }
     return num1;
 }
-int Taschenrechner::prozente(double a, double b){
+int Taschenrechner::prozente(double a, double b)
+{
     char input;
-    long double _result = fmod(a,b);
+    long double _result = fmod(a, b);
 
-         cout << "\n\n\n";
-        cout << "\t\t\t\t\t    +----------------------+\n";
-        cout << "\t\t\t\t\t    |    ->   MODULE   <-  |\n";
-        cout << "\t\t\t\t\t    +----------------------+\n\n";
-        cout << "\n\n\n";
-        cout << "\tGeben Sie bitte Ihre erste Zahl an: ";
-        cin >> a;
-        cout << "\n\tGeben Sie bitte Ihre zweite Zahl an: ";
-        cin >> b;
-    if (b != 0.0) {
+    cout << "\n\n\n";
+    cout << "\t\t\t\t\t    +----------------------+\n";
+    cout << "\t\t\t\t\t    |    ->   MODULE   <-  |\n";
+    cout << "\t\t\t\t\t    +----------------------+\n\n";
+    cout << "\n\n\n";
+    cout << "\tGeben Sie bitte Ihre erste Zahl an: ";
+    cin >> a;
+    cout << "\n\tGeben Sie bitte Ihre zweite Zahl an: ";
+    cin >> b;
+    if (b != 0.0)
+    {
         double result = fmod(a, b);
         std::cout << "\n\t" << a << " geteilt durch " << b << " ist " << result << std::endl;
-    } else {
+    }
+    else
+    {
         std::cout << "Division durch Null ist nicht erlaubt." << std::endl;
     }
-        input = _getch();
-        system("cls");
-        if (input == 'n')
-        {
-            showCalc();
-        }
+    input = _getch();
+    system("cls");
+    if (input == 'n')
+    {
+        showCalc();
+    }
     return 0.0;
 }
-int Taschenrechner::Wurzel(double number, double _sqrt){
+int Taschenrechner::Wurzel(double number, double _sqrt)
+{
 
-       system("cls");
+    system("cls");
 
     char input;
     bool addRun = true;
@@ -243,17 +248,20 @@ int Taschenrechner::Wurzel(double number, double _sqrt){
         cout << "\tGeben Sie eine positive Zahl ein: ";
         cin >> number;
         // Überprüfen, ob die eingegebene Zahl positiv ist
-    if (number >= 0) {
-        // Quadratwurzel der eingegebenen Zahl berechnen
-        _sqrt = sqrt(number);
+        if (number >= 0)
+        {
+            // Quadratwurzel der eingegebenen Zahl berechnen
+            _sqrt = sqrt(number);
 
-        // Ergebnis ausgeben
-        std::cout << "\n\n\tDie Quadratwurzel von " << number << " ist " << _sqrt << std::endl;
-    } else {
-        // Fehlermeldung ausgeben, wenn die eingegebene Zahl negativ ist
-        std::cout << "\n\n\t     Fehler: Die eingegebene Zahl muss positiv sein." << std::endl;
-    }
-    
+            // Ergebnis ausgeben
+            std::cout << "\n\n\tDie Quadratwurzel von " << number << " ist " << _sqrt << std::endl;
+        }
+        else
+        {
+            // Fehlermeldung ausgeben, wenn die eingegebene Zahl negativ ist
+            std::cout << "\n\n\t     Fehler: Die eingegebene Zahl muss positiv sein." << std::endl;
+        }
+
         cout << "\n\n\t     Wollen Sie fortfahren?\n\t'y' for continue / 'n' for exit\n";
         input = _getch();
         system("cls");
@@ -266,15 +274,16 @@ int Taschenrechner::Wurzel(double number, double _sqrt){
 
     return 0.0;
 }
-int Taschenrechner::Winkel(){
+int Taschenrechner::Winkel()
+{
 
-system("cls");
+    system("cls");
 
     char input;
     bool addRun = true;
     double angle_degress; // Winkel in Grad
     double angle_radians; // Winkel in Radiant
-    double sin_value; // Sinuswert
+    double sin_value;     // Sinuswert
     while (addRun)
     {
 
@@ -294,7 +303,7 @@ system("cls");
 
         // Ausgabe des Sinuswerts
         std::cout << "\tSinus(" << angle_degress << " Grad) = " << sin_value << std::endl;
-        
+
         cout << "\n\n\t     Wollen Sie fortfahren?\n\t'y' for continue / 'n' for exit\n";
         input = _getch();
         system("cls");

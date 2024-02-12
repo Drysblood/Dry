@@ -4,18 +4,23 @@
 
 using namespace std;
 
-
-class Snake{
+class Snake
+{
 private:
-
-
     const int width = 25;
     const int height = 25;
     int x, y, fruitX, fruitY;
     int score;
     int tailX[100], tailY[100];
     int nTail;
-    enum eDirection { STOP = 0, LEFT, RIGHT, UP, DOWN };
+    enum eDirection
+    {
+        STOP = 0,
+        LEFT,
+        RIGHT,
+        UP,
+        DOWN
+    };
     eDirection dir;
 
 public:
@@ -25,6 +30,4 @@ public:
     void draw();
     void input();
     void logic();
-
-
 };

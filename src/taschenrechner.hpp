@@ -3,7 +3,8 @@
 #include <cmath>
 #include <math.h>
 
-class Taschenrechner{
+class Taschenrechner
+{
 private:
     double num1, num2;
     double result;
@@ -13,8 +14,7 @@ private:
 
     double angle_degress; // Winkel in Grad
     double angle_radians; // Winkel in Radiant
-    double sin_value; // Sinuswert
-
+    double sin_value;     // Sinuswert
 
 public:
     Taschenrechner();
@@ -28,9 +28,4 @@ public:
     int prozente(double num1, double num2);
     int Wurzel(double number, double sqrt);
     int Winkel();
-
-   
-
-
-
 };
