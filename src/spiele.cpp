@@ -1,16 +1,22 @@
 #include "spiele.hpp"
 #include "snake.hpp"
+#include "fight.hpp"
 
 
-Spiele::Spiele(){
-
-}
+Spiele::Spiele(){}
 
 void Spiele::showGames(){
-    system("cls");
-     Snake snake;
+
+    Snake snake;
+    Fighting fi;
+    cout << "\n\n\n\n";
+	cout << "\t\t\t\t\t\t +-------------+\n";
+	cout << "\t\t\t\t\t\t | -> GAMES <- |\n";
+	cout << "\t\t\t\t\t\t +-------------+\n";
+    cout << "\n\n\n\n";
     // Zeige alle Spiele in der Liste            
     cout << "\n\t\t[ 1 ] Snake";
+    cout << "\n\t\t[ 2 ] Fighting";
     cout << "\n";
     cout << "\n\n";
 
@@ -28,10 +34,13 @@ void Spiele::showGames(){
             showGames();
             break;
             case '2':
-
-            break;
+            fi.playMenu();
+            while(1){
+			fi.play();
+            }
+            showGames();
             default:
             std::cout << "Falsche Eingabe!\n";
         }
-    std::cout << "\n\n";
+    system("cls");
 }

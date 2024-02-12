@@ -25,7 +25,10 @@
     <ClCompile Include="C:\dev\vscode\Dry\src\information.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\dev\vscode\Dry\src\kp.cpp">
+    <ClCompile Include="C:\dev\vscode\Dry\src\fight.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\vscode\Dry\src\bmi.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -51,7 +54,10 @@
     <ClInclude Include="C:\dev\vscode\Dry\src\information.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\dev\vscode\Dry\src\Kp.hpp">
+    <ClInclude Include="C:\dev\vscode\Dry\src\fight.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\dev\vscode\Dry\src\bmi.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

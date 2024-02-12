@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Debug/Dry.exe"
+			"path" : "MinSizeRel/Dry.exe"
 		},
 		{
-			"path" : "Debug/Dry.pdb"
+			"path" : "MinSizeRel/Dry.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -38,7 +38,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi"
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /O1 /Ob1 /DNDEBUG -MD"
 				},
 				{
 					"fragment" : "/EHsc"
@@ -55,7 +55,8 @@
 				10,
 				12,
 				14,
-				16
+				16,
+				17
 			]
 		}
 	],
@@ -71,11 +72,11 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "/DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi",
+				"fragment" : "/DWIN32 /D_WINDOWS /EHsc /O1 /Ob1 /DNDEBUG -MD",
 				"role" : "flags"
 			},
 			{
-				"fragment" : "/machine:x64 /debug /INCREMENTAL /subsystem:console /SUBSYSTEM:CONSOLE",
+				"fragment" : "/machine:x64 /INCREMENTAL:NO /subsystem:console /SUBSYSTEM:CONSOLE",
 				"role" : "flags"
 			},
 			{
@@ -106,7 +107,8 @@
 				10,
 				12,
 				14,
-				16
+				16,
+				17
 			]
 		},
 		{
@@ -120,7 +122,8 @@
 				9,
 				11,
 				13,
-				15
+				15,
+				18
 			]
 		}
 	],
@@ -211,14 +214,25 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "src/Kp.hpp",
+			"path" : "src/fight.hpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/kp.cpp",
+			"path" : "src/fight.cpp",
 			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/bmi.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/bmi.hpp",
+			"sourceGroupIndex" : 1
 		}
 	],
 	"type" : "EXECUTABLE"
